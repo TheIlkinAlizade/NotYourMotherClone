@@ -1,0 +1,95 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "Volumizing Spray",
+      "description": "Best hair volume booster",
+      "image": "https://notyourmothers.com/cdn/shop/files/13062_NYM_CurlTalk_Cream_1_480x480.jpg?v=1687957804",
+      "price": 19.99,
+      "category": "Curl Talk",
+      "sortOrder": "newest"
+    },
+    {
+      "id": 2,
+      "title": "Dry Shampoo",
+      "description": "Keeps your hair fresh without water",
+      "image": "https://notyourmothers.com/cdn/shop/files/13194_NYM_BeachBabe_PowderDryShampoo_1_800x800.jpg?v=1749062977",
+      "price": 14.99,
+      "category": "Shampoo & Conditioner",
+      "sortOrder": "popular"
+    },
+    {
+      "id": 3,
+      "title": "Curl Defining Cream",
+      "description": "Perfect curls with long-lasting hold",
+      "image": "https://notyourmothers.com/cdn/shop/files/13193_NYM_CleanFreak_Dark_PowderDryShampoo_1_480x480.jpg?v=1749052810",
+      "price": 16.49,
+      "category": "Best Sellers",
+      "sortOrder": "featured"
+    },
+    {
+      "id": 4,
+      "title": "Color Protect Conditioner",
+      "description": "Protects and extends color-treated hair",
+      "image": "https://notyourmothers.com/cdn/shop/files/13186_NYM_CurlTalk_Oil_1_480x480.jpg?v=1749048287",
+      "price": 18.99,
+      "category": "Best Sellers",
+      "sortOrder": "featured"
+    },
+    {
+      "id": 5,
+      "title": "Moisture Boost Shampoo",
+      "description": "Hydrating shampoo for dry hair",
+      "image": "https://notyourmothers.com/cdn/shop/files/13194_NYM_BeachBabe_PowderDryShampoo_1_800x800.jpg?v=1749062977",
+      "price": 13.49,
+      "category": "Shampoo & Conditioner",
+      "sortOrder": "newest"
+    },
+    {
+      "id": 6,
+      "title": "Frizz Control Serum",
+      "description": "Smooth and silky hair all day",
+      "image": "https://notyourmothers.com/cdn/shop/files/13196_NYM_BeachBabe_Foam_1_480x480.jpg?v=1749049932",
+      "price": 15.99,
+      "category": "Curl Talk",
+      "sortOrder": "popular"
+    },
+    {
+      "id": 7,
+      "title": "Beach Waves Spray",
+      "description": "Effortless beach waves look",
+      "image": "https://notyourmothers.com/cdn/shop/files/13062_NYM_CurlTalk_Cream_1_480x480.jpg?v=1687957804",
+      "price": 12.49,
+      "category": "New",
+      "sortOrder": "featured"
+    },
+    {
+      "id": 8,
+      "title": "Kids Gentle Shampoo",
+      "description": "Tear-free shampoo for kids",
+      "image": "https://notyourmothers.com/cdn/shop/files/13819_NYM_AEOM_DeFrizz_Spray_1_3dbb214c-16c2-4eeb-aba2-80bc33ac2637_800x800.jpg?v=1749052117",
+      "price": 10.99,
+      "category": "NYM Kids",
+      "sortOrder": "popular"
+    }
+  ],
+  "users": [
+    {
+      "id": "6f89",
+      "username": "aa",
+      "password": "aa"
+    },
+    {
+      "id": "08d6",
+      "username": "a",
+      "password": "a"
+    },
+    {
+      "id": "1c39",
+      "username": "e",
+      "password": "e"
+    }
+  ],
+  "wishlist": [],
+  "cart": []
+}
