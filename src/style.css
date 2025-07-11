@@ -963,6 +963,144 @@ body {
     color: #555;
 }
 
+/* === Info Section === */
+.info-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-color: white;
+  padding: 60px 40px;
+  font-family: "Tinos", serif;
+}
+.info-section .about {
+  width: 40%;
+  padding: 20px;
+}
+.info-section .about h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.info-section .about p {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.info-section .about a {
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: underline;
+  color: black;
+}
+.info-section .services {
+  width: 40%;
+  padding: 20px;
+}
+.info-section .services h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.info-section .columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.info-section .columns ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.info-section .columns ul li {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.about-us.section {
+  padding: 60px 20px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Desktop */
+.about-us .title {
+  flex: 1;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.about-us .title h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.about-us .title p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.about-us .about-image {
+  flex: 1;
+  max-width: 500px;
+}
+
+.about-us .about-image img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* === TABLET (max-width: 1024px) === */
+@media (max-width: 1024px) {
+  .about-us.section {
+    flex-direction: column;
+    padding: 40px 15px;
+    gap: 30px;
+  }
+
+  .about-us .title h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .about-us .title p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .about-us .about-image {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* === MOBILE (max-width: 480px) === */
+@media (max-width: 480px) {
+  .about-us.section {
+    padding: 30px 10px;
+    gap: 20px;
+  }
+
+  .about-us .title h1 {
+    font-size: 28px;
+  }
+
+  .about-us .title p {
+    font-size: 14px;
+  }
+
+  .about-us .about-image {
+    max-width: 100%;
+  }
+}
+
 /* Media Queries */
 
 /* Large Tablets */

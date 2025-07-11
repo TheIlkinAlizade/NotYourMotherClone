@@ -52,11 +52,11 @@ function Footer() {
         <div className="contact">
           <p>© Demert Brands Copyright 2025. All Rights Reserved</p>
           <div className="logos">
-            <a href="#"><i className="fab fa-facebook-f"></i></a>
-            <a href="#"><i className="fab fa-instagram"></i></a>
-            <a href="#"><i className="fab fa-twitter"></i></a>
-            <a href="#"><i className="fab fa-youtube"></i></a>
-            <a href="#"><i className="fab fa-tiktok"></i></a>
+            <a href="https://www.facebook.com/notyourmothers/" target='blank'><i className="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/notyourmothers/" target='blank'><i className="fab fa-instagram"></i></a>
+            <a href="https://x.com/notyourmothers" target='blank'><i className="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/UC9-bmjay5PBCYSXc9ISr7zw" target='blank'><i className="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@notyourmothers" target='blank'><i className="fab fa-tiktok"></i></a>
           </div>
         </div>
       </div>

@@ -7,6 +7,10 @@ import categoryImg from "../images/category.png";
 import logo from "../images/logo.png";
 import banner from "../images/banner.png";
 import featuring from "../images/featuring.jpg";
+import featuring1 from "../images/featuring1.png";
+import featuring2 from "../images/featuring2.png";
+import featuring3 from "../images/featuring3.png";
+import featuring4 from "../images/featuring4.png";
 import catalogue1 from "../images/catalogue1.jpg";
 import catalogue2 from "../images/catalogue2.jpg";
 import catalogue3 from "../images/catalogue3.jpg";
@@ -20,11 +24,13 @@ import {
   updateWishlist,
 } from "../utils/storageUtils";
 
+
 function Home() {
   const [categories, setCategories] = useState([]);
   const [latestItems, setLatestItems] = useState([]);
   const [cart, setCart] = useState(getCart());
   const [wishlist, setWishlist] = useState(getWishlist());
+  const featuringImages = [featuring, featuring1, featuring2, featuring3, featuring4];
 
   const catalogueTitles = [
     "Curl Care",
@@ -89,7 +95,7 @@ function Home() {
             cash in those coins for sweet discounts!
           </p>
           <button>
-            <a href="#">Join The Hearts Club</a>
+            <Link to='auth'>Join The Hearts Club</Link>
           </button>
         </div>
         <div className="image">
@@ -184,10 +190,10 @@ function Home() {
           <h1>Featuring...</h1>
         </div>
         <div className="images">
-          {[...Array(5)].map((_, i) => (
-            <a className="image" href="#" key={i}>
+          {featuringImages.map((featuring, i) => (
+            <Link className="image" to='/items' key={i}>
               <img src={featuring} alt="featuring" />
-            </a>
+            </Link>
           ))}
         </div>
       </div>
@@ -199,13 +205,32 @@ function Home() {
         </div>
         <div className="images">
           {catalogueImages.map((img, i) => (
-            <a className="image" href="#" key={i}>
+            <Link className="image" to='/items' key={i}>
               <img src={img} alt={`catalogue${i + 1}`} />
               <h1>{catalogueTitles[i]}</h1>
-            </a>
+            </Link>
           ))}
         </div>
       </div>
+
+      <div className="about-us section" id="about">
+        <div className="title">
+          <h1>About Us</h1>
+          <p>
+            At Not Your Mother's, we’re all about embracing individuality and expressing your unique style through vibrant, effective haircare products.  
+            From bold textures to everyday maintenance, our formulas are designed to empower every type of hair and every personality.
+          </p>
+          <p>
+            Founded with a passion for fun, fearless, and accessible beauty, we believe great hair starts with great products — no complicated routines required.  
+            Join the movement and discover haircare that’s truly “Not Your Mother’s.”
+          </p>
+        </div>
+        <div className="about-image">
+          <img src="https://notyourmothers.com/cdn/shop/files/FullHeartLockupOnce_f07bdc6e-b78f-4e31-8fd2-de04abc8cdd7_2400x2400.gif?v=1678985268"alt="About Us" />
+        </div>
+      </div>
+
+
     </>
   );
 }

@@ -82,7 +82,7 @@ function Items() {
   return (
     <>
       <div className="shopheader">
-        <h1>Shampoo + Conditioner</h1>
+        <h1>All Products</h1>
       </div>
 
       <div className="filterbar">

@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import logo from "../images/logo.png";
 import { getUser, logoutUser } from "../utils/storageUtils";
@@ -13,6 +13,20 @@ function Navbar() {
   useEffect(() => {
     setUser(getUser());
   }, []);
+
+  const location = useLocation();
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [username, setUsername] = useState("");
+
+  useEffect(() => {
+    const user = JSON.parse(localStorage.getItem("user")); 
+    if (user && user.username) {
+      setUsername(user.username);
+      setIsLoggedIn(true);
+    } else {
+      setIsLoggedIn(false);
+    }
+  }, [location]);
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -42,7 +56,7 @@ function Navbar() {
             <li><Link to={`/items?category=${encodeURIComponent("Curl Talk")}`}>Curl Talk</Link></li>
             <li><Link to={`/items?category=${encodeURIComponent("Best Sellers")}`}>Best Sellers</Link></li>
             <li><Link to={`/items?category=${encodeURIComponent("New")}`}>New</Link></li>
-            <li><Link to={`/items?category=${encodeURIComponent("Rewards")}`}>Rewards</Link></li>
+            <li><Link to={`/items?category=${encodeURIComponent("Dry Shampoo")}`}>Dry Shampoo</Link></li>
         </ul>
       </div>
 
@@ -52,7 +66,7 @@ function Navbar() {
 
       <div className="links links2">
         <ul>
-          <li><a href="#">About Us</a></li>
+          <li><a href="#about">About Us</a></li>
           <li>
             <button className="search-toggle" onClick={() => setShowSearch(!showSearch)}>
               <i className="bx bx-search"></i>
@@ -102,7 +116,7 @@ function Navbar() {
             <Link to="/items?category=Curl%20Talk" className="link" onClick={toggleMobileMenu}>Curl Talk</Link>
             <Link to="/items?category=Best%20Sellers" className="link" onClick={toggleMobileMenu}>Best Sellers</Link>
             <Link to="/items?category=New" className="link" onClick={toggleMobileMenu}>New</Link>
-            <Link to="/items?category=Rewards" className="link" onClick={toggleMobileMenu}>Rewards</Link>
+            <Link to="/items?category=Dry%Shampoo" className="link" onClick={toggleMobileMenu}>Dry Shampoo</Link>
           <a href="#" className="link" onClick={toggleMobileMenu}>About Us</a>
             
           {/* Actual search form for mobile */}
